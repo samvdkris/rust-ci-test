@@ -5,3 +5,9 @@ cache: cargo
 before_install:
   - rustup component add clippy
   - rustup component add rustfmt
+  - mkdir ~/.config/rustfmt && echo hard_tabs = true > ~/.config/rustfmt/rustfmt.toml
+
+script:
+  - cargo fmt -- --check
+  - cargo test --verbose
+  - cargo clippy -- -D warnings
