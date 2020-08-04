@@ -1,3 +1,6 @@
+mod imported;
+
 fn main() {
-	println!("Hello, world!");
+	println!("{}", imported::square(2));
+	println!("{}", imported::bad_square(2));
 }
