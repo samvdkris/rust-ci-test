@@ -6,6 +6,10 @@ pub fn fixed_square(num: i64) -> i64 {
 	num * num
 }
 
+
+
+
+
 #[cfg(test)]
 mod tests {
 	use super::*;
