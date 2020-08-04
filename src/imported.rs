@@ -2,8 +2,8 @@ pub fn square(num: i64) -> i64 {
 	num * num
 }
 
-pub fn bad_square(num: i64) -> i64 {
-	num * 2
+pub fn fixed_square(num: i64) -> i64 {
+	num * num
 }
 
 #[cfg(test)]
@@ -17,8 +17,8 @@ mod tests {
 	}
 
 	#[test]
-	fn test_bad_square() {
-		assert_eq!(bad_square(2), 4);
-		assert_eq!(bad_square(5), 25);
+	fn test_fixed_square() {
+		assert_eq!(fixed_square(2), 4);
+		assert_eq!(fixed_square(5), 25);
 	}
 }
